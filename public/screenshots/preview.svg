@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 800" width="2400" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#111118"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="50%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="2400" height="800" fill="url(#bg)"/>
+  <text x="1200" y="100" font-family="Geist, sans-serif" font-size="64" fill="#e4e4e7" font-weight="bold" text-anchor="middle" letter-spacing="8">AEGIS</text>
+  <text x="1200" y="150" font-family="Geist, sans-serif" font-size="20" fill="#10b981" text-anchor="middle" letter-spacing="4">TREASURY INTELLIGENCE PLATFORM</text>
+  <text x="1200" y="200" font-family="Geist Mono, monospace" font-size="14" fill="#555" text-anchor="middle">Multi-asset management · Real-time risk scoring · AI-powered forecasting</text>
+  <rect x="1200" y="240" width="100" height="3" rx="1.5" fill="url(#accentGrad)" transform="translate(-50,0)"/>
+  <rect x="200" y="300" width="450" height="120" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="220" y="335" font-family="Geist Mono, monospace" font-size="12" fill="#555">TOTAL TREASURY</text>
+  <text x="220" y="390" font-family="Geist Mono, monospace" font-size="36" fill="#e4e4e7" font-weight="bold">$847.2M</text>
+  <text x="220" y="410" font-family="Geist Mono, monospace" font-size="12" fill="#10b981">↑ 12.3% MoM</text>
+  <rect x="700" y="300" width="450" height="120" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="720" y="335" font-family="Geist Mono, monospace" font-size="12" fill="#555">ACTIVE TRANSACTIONS</text>
+  <text x="720" y="390" font-family="Geist Mono, monospace" font-size="36" fill="#e4e4e7" font-weight="bold">2,847</text>
+  <text x="720" y="410" font-family="Geist Mono, monospace" font-size="12" fill="#f59e0b">↑ 8.1% WoW</text>
+  <rect x="1200" y="300" width="450" height="120" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="1220" y="335" font-family="Geist Mono, monospace" font-size="12" fill="#555">RISK SCORE</text>
+  <text x="1220" y="390" font-family="Geist Mono, monospace" font-size="36" fill="#10b981" font-weight="bold">23</text>
+  <text x="1220" y="410" font-family="Geist Mono, monospace" font-size="12" fill="#10b981">Low risk</text>
+  <rect x="1700" y="300" width="500" height="120" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="1720" y="335" font-family="Geist Mono, monospace" font-size="12" fill="#555">FORECAST ACCURACY</text>
+  <text x="1720" y="390" font-family="Geist Mono, monospace" font-size="36" fill="#e4e4e7" font-weight="bold">94.2%</text>
+  <text x="1720" y="410" font-family="Geist Mono, monospace" font-size="12" fill="#10b981">↑ 2.1% improvement</text>
+  <polyline points="220,650 340,590 460,610 580,550 700,520 820,480 940,460 1060,440 1180,450 1300,420 1420,400 1540,410 1660,380 1780,360 1900,370 2020,340 2140,330" fill="none" stroke="#10b981" stroke-width="3"/>
+  <polygon points="220,650 220,700 2140,700 2140,330 2020,340 1900,370 1780,360 1660,380 1540,410 1420,400 1300,420 1180,450 1060,440 940,460 820,480 700,520 580,550 460,610 340,590" fill="#10b981" opacity="0.06"/>
+  <text x="1200" y="740" font-family="Geist, sans-serif" font-size="16" fill="#555" text-anchor="middle">Where precision meets financial intelligence</text>
+  <text x="1200" y="775" font-family="Geist Mono, monospace" font-size="12" fill="#444" text-anchor="middle">Next.js 16 · TypeScript 5 · Tailwind CSS v4 · Framer Motion · Recharts · Radix UI</text>
+</svg>

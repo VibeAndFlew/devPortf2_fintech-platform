@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#111118"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="chartLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="0" y="0" width="220" height="800" fill="#0d0d14" rx="0"/>
+  <rect x="220" y="0" width="1" height="800" fill="#1a1a24"/>
+  <rect x="24" y="24" width="172" height="40" rx="8" fill="#10b981" opacity="0.1"/>
+  <text x="110" y="50" font-family="Geist, sans-serif" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">AEGIS</text>
+  <text x="30" y="110" font-family="Geist, sans-serif" font-size="12" fill="#10b981" font-weight="600">DASHBOARD</text>
+  <text x="30" y="150" font-family="Geist, sans-serif" font-size="12" fill="#555">Treasury</text>
+  <text x="30" y="180" font-family="Geist, sans-serif" font-size="12" fill="#555">Transactions</text>
+  <text x="30" y="210" font-family="Geist, sans-serif" font-size="12" fill="#555">Revenue</text>
+  <text x="30" y="240" font-family="Geist, sans-serif" font-size="12" fill="#555">Risk</text>
+  <text x="30" y="270" font-family="Geist, sans-serif" font-size="12" fill="#555">Forecasting</text>
+  <text x="30" y="300" font-family="Geist, sans-serif" font-size="12" fill="#555">Insights</text>
+  <text x="30" y="330" font-family="Geist, sans-serif" font-size="12" fill="#555">Audit</text>
+  <rect x="221" y="0" width="979" height="56" fill="#0d0d14"/>
+  <rect x="240" y="16" width="300" height="24" rx="12" fill="#1a1a24" stroke="#222" stroke-width="1"/>
+  <text x="252" y="33" font-family="Geist, sans-serif" font-size="11" fill="#444">Search treasury data...</text>
+  <circle cx="1140" cy="28" r="14" fill="#10b981" opacity="0.2"/>
+  <text x="1140" y="33" font-family="Geist, sans-serif" font-size="10" fill="#10b981" text-anchor="middle">AB</text>
+  <rect x="240" y="76" width="300" height="96" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="260" y="104" font-family="Geist Mono, monospace" font-size="10" fill="#555">TOTAL TREASURY</text>
+  <text x="260" y="148" font-family="Geist Mono, monospace" font-size="28" fill="#e4e4e7" font-weight="bold">$847.2M</text>
+  <text x="260" y="164" font-family="Geist Mono, monospace" font-size="10" fill="#10b981">↑ 12.3% MoM</text>
+  <rect x="560" y="76" width="300" height="96" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="580" y="104" font-family="Geist Mono, monospace" font-size="10" fill="#555">ACTIVE TRANSACTIONS</text>
+  <text x="580" y="148" font-family="Geist Mono, monospace" font-size="28" fill="#e4e4e7" font-weight="bold">2,847</text>
+  <text x="580" y="164" font-family="Geist Mono, monospace" font-size="10" fill="#f59e0b">↑ 8.1% WoW</text>
+  <rect x="880" y="76" width="300" height="96" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="900" y="104" font-family="Geist Mono, monospace" font-size="10" fill="#555">RISK SCORE</text>
+  <text x="900" y="148" font-family="Geist Mono, monospace" font-size="28" fill="#10b981" font-weight="bold">23</text>
+  <text x="910" y="148" font-family="Geist Mono, monospace" font-size="14" fill="#555">/100</text>
+  <text x="900" y="164" font-family="Geist Mono, monospace" font-size="10" fill="#10b981">Low risk</text>
+  <rect x="240" y="192" width="300" height="96" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="260" y="220" font-family="Geist Mono, monospace" font-size="10" fill="#555">REVENUE MTD</text>
+  <text x="260" y="264" font-family="Geist Mono, monospace" font-size="28" fill="#e4e4e7" font-weight="bold">$14.2M</text>
+  <text x="260" y="280" font-family="Geist Mono, monospace" font-size="10" fill="#10b981">↑ 5.7% vs target</text>
+  <rect x="560" y="192" width="300" height="96" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="580" y="220" font-family="Geist Mono, monospace" font-size="10" fill="#555">FORECAST ACCURACY</text>
+  <text x="580" y="264" font-family="Geist Mono, monospace" font-size="28" fill="#e4e4e7" font-weight="bold">94.2%</text>
+  <text x="580" y="280" font-family="Geist Mono, monospace" font-size="10" fill="#10b981">↑ 2.1% from last month</text>
+  <rect x="880" y="192" width="300" height="96" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="900" y="220" font-family="Geist Mono, monospace" font-size="10" fill="#555">PENDING SETTLEMENTS</text>
+  <text x="900" y="264" font-family="Geist Mono, monospace" font-size="28" fill="#e4e4e7" font-weight="bold">$3.2M</text>
+  <text x="900" y="280" font-family="Geist Mono, monospace" font-size="10" fill="#f59e0b">42 pending</text>
+  <rect x="240" y="308" width="630" height="300" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="260" y="336" font-family="Geist, sans-serif" font-size="13" fill="#e4e4e7" font-weight="600">Revenue Overview</text>
+  <polyline points="280,460 350,430 420,445 490,400 560,380 630,350 700,320 770,290 840,310" fill="none" stroke="#10b981" stroke-width="2"/>
+  <polygon points="280,460 280,520 840,520 840,310 770,290 700,320 630,350 560,380 490,400 420,445 350,430" fill="#10b981" opacity="0.08"/>
+  <text x="280" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">Jan</text>
+  <text x="350" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">Feb</text>
+  <text x="420" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">Mar</text>
+  <text x="490" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">Apr</text>
+  <text x="560" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">May</text>
+  <text x="630" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">Jun</text>
+  <text x="700" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">Jul</text>
+  <text x="770" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">Aug</text>
+  <text x="840" y="540" font-family="Geist Mono, monospace" font-size="9" fill="#444">Sep</text>
+  <text x="260" y="465" font-family="Geist Mono, monospace" font-size="9" fill="#444" text-anchor="end">$0</text>
+  <text x="260" y="420" font-family="Geist Mono, monospace" font-size="9" fill="#444" text-anchor="end">$5M</text>
+  <text x="260" y="375" font-family="Geist Mono, monospace" font-size="9" fill="#444" text-anchor="end">$10M</text>
+  <text x="260" y="330" font-family="Geist Mono, monospace" font-size="9" fill="#444" text-anchor="end">$15M</text>
+  <rect x="890" y="308" width="290" height="300" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="910" y="336" font-family="Geist, sans-serif" font-size="13" fill="#e4e4e7" font-weight="600">Recent Transactions</text>
+  <line x1="910" y1="355" x2="1160" y2="355" stroke="#1a1a24" stroke-width="1"/>
+  <text x="910" y="378" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">Wire Transfer</text>
+  <text x="1100" y="378" font-family="Geist Mono, monospace" font-size="10" fill="#10b981">$24,500</text>
+  <text x="910" y="394" font-family="Geist Mono, monospace" font-size="9" fill="#555">2 min ago</text>
+  <text x="910" y="422" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">ACH Payment</text>
+  <text x="1100" y="422" font-family="Geist Mono, monospace" font-size="10" fill="#f59e0b">$8,200</text>
+  <text x="910" y="438" font-family="Geist Mono, monospace" font-size="9" fill="#555">15 min ago</text>
+  <text x="910" y="466" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">FX Conversion</text>
+  <text x="1100" y="466" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">$150,000</text>
+  <text x="910" y="482" font-family="Geist Mono, monospace" font-size="9" fill="#555">1 hr ago</text>
+  <text x="910" y="510" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">Internal Transfer</text>
+  <text x="1100" y="510" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">$45,000</text>
+  <text x="910" y="526" font-family="Geist Mono, monospace" font-size="9" fill="#555">3 hr ago</text>
+  <rect x="240" y="628" width="940" height="152" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="260" y="656" font-family="Geist, sans-serif" font-size="13" fill="#e4e4e7" font-weight="600">Activity Feed</text>
+  <line x1="260" y1="668" x2="1160" y2="668" stroke="#1a1a24" stroke-width="1"/>
+  <circle cx="280" cy="695" r="4" fill="#10b981"/>
+  <text x="296" y="699" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">New wire transfer of $150,000 initiated — pending approval</text>
+  <circle cx="280" cy="725" r="4" fill="#f59e0b"/>
+  <text x="296" y="729" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">Risk threshold alert triggered for transaction #TX-8421</text>
+  <circle cx="280" cy="755" r="4" fill="#10b981"/>
+  <text x="296" y="759" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">Monthly revenue target achieved — 105.3% of goal</text>
+</svg>

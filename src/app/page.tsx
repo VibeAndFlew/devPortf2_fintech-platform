@@ -1,65 +1,102 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
+import { Wallet, ArrowLeftRight, Shield, TrendingUp, LineChart, Timer, Dot } from 'lucide-react'
+import { KPICard } from '@/components/dashboard/kpi-card'
+import { RevenueChart } from '@/components/charts/revenue-chart'
+import { TransactionsTable } from '@/components/dashboard/transactions-table'
+import { ActivityFeed } from '@/components/dashboard/activity-feed'
+import { RiskGauge } from '@/components/charts/risk-gauge'
+import { SkeletonCard, SkeletonChart, SkeletonTable, SkeletonList } from '@/components/skeletons'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { transactions, treasuryBalances, revenueMetrics, riskItems } from '@/lib/mock-data'
+import { cn } from '@/lib/utils'
+
+export default function DashboardPage() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 800)
+    return () => clearTimeout(timer)
+  }, [])
+
+  const totalTreasury = treasuryBalances.reduce((s, b) => s + b.balance, 0)
+  const activeTransactions = transactions.filter(t => t.status === 'pending').length
+  const avgRisk = Math.round(riskItems.reduce((s, r) => s + r.score, 0) / riskItems.length)
+  const latestRevenue = revenueMetrics[revenueMetrics.length - 1]
+  const pendingSettlements = transactions.filter(t => t.status === 'pending').reduce((s, t) => s + t.amount, 0)
+  const forecastAccuracy = 94.2
+
+  const kpis = [
+    { label: 'Total Treasury', value: `$${(totalTreasury / 1000000).toFixed(1)}M`, trend: 3.2, trendLabel: 'vs yesterday', icon: <Wallet className="h-4 w-4" />, variant: 'default' as const },
+    { label: 'Active Transactions', value: activeTransactions.toString(), trend: -2, trendLabel: 'vs yesterday', icon: <ArrowLeftRight className="h-4 w-4" />, variant: 'warning' as const },
+    { label: 'Risk Score', value: avgRisk.toString(), suffix: '/100', trend: -5, trendLabel: 'vs yesterday', icon: <Shield className="h-4 w-4" />, variant: avgRisk > 60 ? 'danger' as const : avgRisk > 30 ? 'warning' as const : 'success' as const },
+    { label: 'Revenue MTD', value: `$${(latestRevenue.revenue / 1000000).toFixed(1)}M`, trend: latestRevenue.margin, trendLabel: 'margin', icon: <TrendingUp className="h-4 w-4" />, variant: 'success' as const },
+    { label: 'Forecast Accuracy', value: `${forecastAccuracy}%`, trend: 1.2, trendLabel: 'vs last month', icon: <LineChart className="h-4 w-4" />, variant: 'default' as const },
+    { label: 'Pending Settlements', value: `$${(pendingSettlements / 1000000).toFixed(1)}M`, trend: 8, trendLabel: 'vs yesterday', icon: <Timer className="h-4 w-4" />, variant: 'warning' as const },
+  ]
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-lg font-bold text-foreground">Dashboard</h1>
+          <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+            <span>{new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })}</span>
+            <Dot className="h-3 w-3 text-emerald-400" />
+            <span className="text-emerald-400">System Status: All Nominal</span>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
+        {kpis.map((kpi, i) => (
+          loading ? <SkeletonCard key={i} /> : <KPICard key={i} {...kpi} />
+        ))}
+      </div>
+
+      <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
+        <div className="xl:col-span-3 space-y-6">
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-sm font-medium">Revenue Overview</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {loading ? <SkeletonChart /> : <RevenueChart />}
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-sm font-medium">Recent Transactions</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {loading ? <SkeletonTable rows={5} /> : <TransactionsTable />}
+            </CardContent>
+          </Card>
         </div>
-      </main>
+
+        <div className="xl:col-span-1 space-y-6">
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-sm font-medium">Risk Overview</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {loading ? <SkeletonChart /> : <RiskGauge />}
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-3">
+              <CardTitle className="text-sm font-medium">Activity Log</CardTitle>
+            </CardHeader>
+            <CardContent className="p-0 h-[320px]">
+              {loading ? <SkeletonList items={5} /> : <ActivityFeed />}
+            </CardContent>
+          </Card>
+        </div>
+      </div>
     </div>
-  );
+  )
 }

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#111118"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="0" y="0" width="220" height="800" fill="#0d0d14"/>
+  <rect x="220" y="0" width="1" height="800" fill="#1a1a24"/>
+  <rect x="24" y="24" width="172" height="40" rx="8" fill="#10b981" opacity="0.1"/>
+  <text x="110" y="50" font-family="Geist, sans-serif" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">AEGIS</text>
+  <text x="30" y="110" font-family="Geist, sans-serif" font-size="12" fill="#555">Dashboard</text>
+  <text x="30" y="140" font-family="Geist, sans-serif" font-size="12" fill="#555">Treasury</text>
+  <text x="30" y="170" font-family="Geist, sans-serif" font-size="12" fill="#555">Transactions</text>
+  <text x="30" y="200" font-family="Geist, sans-serif" font-size="12" fill="#555">Revenue</text>
+  <text x="30" y="230" font-family="Geist, sans-serif" font-size="12" fill="#10b981" font-weight="600">OBSERVABILITY</text>
+  <text x="30" y="260" font-family="Geist, sans-serif" font-size="12" fill="#555">Settings</text>
+  <rect x="221" y="0" width="979" height="56" fill="#0d0d14"/>
+  <rect x="240" y="16" width="300" height="24" rx="12" fill="#1a1a24" stroke="#222" stroke-width="1"/>
+  <text x="252" y="33" font-family="Geist, sans-serif" font-size="11" fill="#444">Search monitoring data...</text>
+  <text x="260" y="90" font-family="Geist, sans-serif" font-size="20" fill="#e4e4e7" font-weight="600">Observability Dashboard</text>
+  <text x="260" y="115" font-family="Geist Mono, monospace" font-size="12" fill="#555">System monitoring · Error tracking · Performance metrics</text>
+  <rect x="240" y="140" width="290" height="100" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="260" y="168" font-family="Geist Mono, monospace" font-size="10" fill="#555">UPTIME</text>
+  <text x="260" y="212" font-family="Geist Mono, monospace" font-size="24" fill="#10b981" font-weight="bold">99.97%</text>
+  <rect x="545" y="140" width="290" height="100" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="565" y="168" font-family="Geist Mono, monospace" font-size="10" fill="#555">AVG RESPONSE TIME</text>
+  <text x="565" y="212" font-family="Geist Mono, monospace" font-size="24" fill="#e4e4e7" font-weight="bold">42ms</text>
+  <rect x="850" y="140" width="290" height="100" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="870" y="168" font-family="Geist Mono, monospace" font-size="10" fill="#555">ERROR RATE</text>
+  <text x="870" y="212" font-family="Geist Mono, monospace" font-size="24" fill="#10b981" font-weight="bold">0.02%</text>
+  <rect x="240" y="260" width="450" height="200" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="260" y="290" font-family="Geist, sans-serif" font-size="13" fill="#e4e4e7" font-weight="600">Requests per Minute</text>
+  <polyline points="280,410 320,390 360,400 400,370 440,350 480,360 520,330 560,310 600,330 640,300" fill="none" stroke="#10b981" stroke-width="2"/>
+  <polygon points="280,410 280,440 640,440 640,300 600,330 560,310 520,330 480,360 440,350 400,370 360,400 320,390" fill="#10b981" opacity="0.06"/>
+  <rect x="710" y="260" width="430" height="200" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="730" y="290" font-family="Geist, sans-serif" font-size="13" fill="#e4e4e7" font-weight="600">Active Alerts</text>
+  <line x1="730" y1="305" x2="1120" y2="305" stroke="#1a1a24" stroke-width="1"/>
+  <circle cx="740" cy="325" r="4" fill="#10b981"/>
+  <text x="754" y="329" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">All systems operational</text>
+  <circle cx="740" cy="355" r="4" fill="#3b82f6"/>
+  <text x="754" y="359" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">CDN sync complete — 14 edge locations</text>
+  <circle cx="740" cy="385" r="4" fill="#f59e0b"/>
+  <text x="754" y="389" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">Database connection pool at 68% capacity</text>
+  <circle cx="740" cy="415" r="4" fill="#10b981"/>
+  <text x="754" y="419" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">SSL certificate valid — expires in 87 days</text>
+  <rect x="240" y="480" width="900" height="100" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="260" y="510" font-family="Geist, sans-serif" font-size="13" fill="#e4e4e7" font-weight="600">System Health</text>
+  <rect x="270" y="530" width="120" height="30" rx="6" fill="#10b981" opacity="0.15"/>
+  <text x="330" y="550" font-family="Geist Mono, monospace" font-size="10" fill="#10b981" text-anchor="middle">Web Server</text>
+  <rect x="410" y="530" width="120" height="30" rx="6" fill="#10b981" opacity="0.15"/>
+  <text x="470" y="550" font-family="Geist Mono, monospace" font-size="10" fill="#10b981" text-anchor="middle">Database</text>
+  <rect x="550" y="530" width="120" height="30" rx="6" fill="#10b981" opacity="0.15"/>
+  <text x="610" y="550" font-family="Geist Mono, monospace" font-size="10" fill="#10b981" text-anchor="middle">Cache</text>
+  <rect x="690" y="530" width="120" height="30" rx="6" fill="#10b981" opacity="0.15"/>
+  <text x="750" y="550" font-family="Geist Mono, monospace" font-size="10" fill="#10b981" text-anchor="middle">Queue</text>
+  <rect x="830" y="530" width="120" height="30" rx="6" fill="#f59e0b" opacity="0.15"/>
+  <text x="890" y="550" font-family="Geist Mono, monospace" font-size="10" fill="#f59e0b" text-anchor="middle">Storage</text>
+  <rect x="240" y="600" width="900" height="180" rx="12" fill="#111118" stroke="#1a1a24" stroke-width="1"/>
+  <text x="260" y="630" font-family="Geist, sans-serif" font-size="13" fill="#e4e4e7" font-weight="600">Recent Events</text>
+  <line x1="260" y1="645" x2="1120" y2="645" stroke="#1a1a24" stroke-width="1"/>
+  <text x="280" y="668" font-family="Geist Mono, monospace" font-size="10" fill="#555">12:34:22</text>
+  <text x="380" y="668" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">Deploy successful — v1.0.0 rolled out to 100% of traffic</text>
+  <text x="280" y="696" font-family="Geist Mono, monospace" font-size="10" fill="#555">12:28:10</text>
+  <text x="380" y="696" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">Cache warm complete — 2,847 keys loaded</text>
+  <text x="280" y="724" font-family="Geist Mono, monospace" font-size="10" fill="#555">12:15:44</text>
+  <text x="380" y="724" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">Database migration applied — schema v2.1</text>
+  <text x="280" y="752" font-family="Geist Mono, monospace" font-size="10" fill="#555">11:58:02</text>
+  <text x="380" y="752" font-family="Geist Mono, monospace" font-size="10" fill="#e4e4e7">SSL certificate renewal completed</text>
+</svg>
